@@ -1,0 +1,22 @@
+{
+  "configurations": [
+    {
+      "name": "STM32H7",
+      "includePath": [
+        "${workspaceFolder}/inc",
+        "${workspaceFolder}/Drivers/CMSIS/Include",
+        "${workspaceFolder}/Drivers/CMSIS/Device/ST/STM32H7xx/Include",
+        "${workspaceFolder}/Drivers/STM32H7xx_HAL_Driver/Inc"
+      ],
+      "defines": [
+        "USE_HAL_DRIVER",
+        "STM32H743xx"
+      ],
+      "compilerPath": "D:/gcc_arm/12.2 rel1/bin/arm-none-eabi-gcc.exe",
+      "intelliSenseMode": "gcc-arm",
+      "cStandard": "gnu11",
+      "cppStandard": "gnu++17"
+    }
+  ],
+  "version": 4
+}

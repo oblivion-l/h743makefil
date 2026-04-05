@@ -1,0 +1,25 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "STM32 Debug",
+      "type": "cortex-debug",
+      "request": "attach",
+      "cwd": "${workspaceFolder}",
+      "executable": "${workspaceFolder}/build/app.elf",
+      "servertype": "openocd",
+      "serverpath": "openocd",
+      "gdbPath": "arm-none-eabi-gdb",
+      "device": "STM32H743xx",
+      "interface": "swd",
+      "configFiles": [
+        "interface/cmsis-dap.cfg",
+        "target/stm32h7x.cfg"
+      ],
+      "runToEntryPoint": "main",
+      "postStartSessionCommands": [
+        "monitor reset halt"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "build",
+      "type": "shell",
+      "command": "mingw32-make",
+      "group": "build",
+      "problemMatcher": []
+    },
+    {
+      "label": "clean",
+      "type": "shell",
+      "command": "mingw32-make clean"
+    },
+    {
+      "label": "flash",
+      "type": "shell",
+      "command": "mingw32-make flash",
+      "dependsOn": "build",
+      "problemMatcher": []
+    }
+  ]
+}
