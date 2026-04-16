@@ -1,0 +1,9 @@
+-Iinc
+-IDrivers/CMSIS/Include
+-IDrivers/CMSIS/Device/ST/STM32F4xx/Include
+-IDrivers/STM32F4xx_HAL_Driver/Inc
+-DUSE_HAL_DRIVER
+-DSTM32F407xx
+-x
+c
+-std=gnu11
